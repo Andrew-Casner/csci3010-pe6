@@ -1,10 +1,10 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -ggdb -Wall
 
-all: main
+all: animal
 
 animal: main.o Animal.o
-	$(CXX) $(CXXFLAGS) main.o Animal.o -o main 
+	$(CXX) $(CXXFLAGS) main.o Animal.o -o animal 
 
 main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c main.cpp
